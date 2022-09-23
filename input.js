@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const eventCallback = function (e) {
         let el = e.target,
             pattern = el.dataset.phonePattern,
-            matrix_def = "+3__(__) ___-__-__",
+            matrix_def = "+___ __ ___ __ __",
             matrix = pattern ? pattern : matrix_def,
             i = 0,
             def = matrix.replace(/\D/g, ""),
