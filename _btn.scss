@@ -1,0 +1,120 @@
+.btn{
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	display: inline-block;
+	text-transform: uppercase;
+	color: $red;
+	min-width: 202px;
+	padding: 13px 10px;
+	transition: $anim;
+	text-align: center;
+	letter-spacing: 1px;
+	outline: none;
+	border-radius: 0;
+	z-index: -1;
+
+	&:hover{
+		@include back-pulse();
+		border: 1px solid transparent;
+	}
+
+	&:focus{
+		box-shadow: none;
+	}
+
+	&_red{
+		background: $red;
+		color: $white;
+		border: 1px solid transparent;
+	}
+
+	&_disabled{
+		background: $middle-grey;
+		color: $white;
+		border: 1px solid transparent;
+	}
+
+	&_disabled-1{
+		border: 1px solid $grey;
+		color: $grey;
+	}
+
+	&_height{
+		padding: 9px 10px;
+	}
+
+	&_min-width-1{
+		min-width: 115px;
+		max-width: 100%;
+	}
+
+	&_min-width-2{
+		min-width: 180px;
+		max-width: 100%;
+	}
+
+	&_min-width-3{
+		min-width: 320px;
+		max-width: 100%;
+	}
+
+	&_min-width-4{
+		min-width: 110px;
+		max-width: 100%;
+	}
+
+	&_min-width-5{
+		min-width: 270px;
+		max-width: 100%;
+	}
+
+	&_min-width-6{
+		min-width: 170px;
+		max-width: 100%;
+	}
+
+	&_min-width-7{
+		min-width: 155px;
+		max-width: 100%;
+	}
+
+	&_min-width-8{
+		min-width: 160px;
+		max-width: 100%;
+	}
+
+	&_min-width-9{
+		min-width: 145px;
+		max-width: 100%;
+	}
+
+	&_min-width-10{
+		min-width: 234px;
+		max-width: 100%;
+
+		@media (max-width: 767px){
+			width: 100%;
+		}
+	}
+	&_min-width-11{
+		min-width: 185px;
+		max-width: 100%;
+
+	}
+}
+
+.call-btn-wrap{
+	position: relative;
+
+	.login-block{
+		top: 0;
+		left: 0;
+		right: auto;
+		margin: 0;
+
+		.form-group + .form-group{
+			margin: 0 0 24px;
+		}
+	}
+}
