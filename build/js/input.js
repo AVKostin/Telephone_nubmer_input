@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 : e;
         });
     };
-    const numbers = document.querySelectorAll("[phone-pattern]");
+    const numbers = document.querySelectorAll("#phone-pattern");
 
     for (let number of numbers) {
         for (let e of ["input"]) {
